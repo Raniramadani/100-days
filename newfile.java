@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("msukkan gaji: ");
+		double gaji = input.nextDouble();
+		
+		System.out.println("gaji kotor : " + gaji );
+		
+		if (gaji >= 3000000 && gaji < 5000000) {
+		System.out.println("pajak 5%");
+		System.out.println(gaji - (gaji * 0.05));
+		}else if (gaji >=5000000) {
+			System.out.println("pajak 10%");
+			System.out.println(gaji - (gaji * 0.01));
+			}else {
+			
+			System.out.println("Tidak kena pajak");
+			
+	}
+}	
+	
+}
