@@ -1,0 +1,22 @@
+public class rany {
+	public static void main(String[] args) {
+				//gunakan tipe data  variabel seperti String, int, double, char, boolean untuk mendefinisikan variabel seperti berikut
+				String nama ="rany";
+				//tulis variabel di type data String dan seterusnya tapi harus sesuai dengan variavbel dan type datanya
+		String alamat ="lembang";
+		int umur = 18;
+		double tinggi = 1.50;
+		char jeniskelamin = 'p';
+		boolean status = true;
+		
+		//setelah itu prongram akan mencetak variabel yang anda masukan dengan System.out.println
+		System.out.println(nama);
+		System.out.println(alamat);
+		System.out.println(umur);
+		System.out.println(tinggi);
+		System.out.println(jeniskelamin);
+		System.out.println(status);
+		
+		
+	}
+}
