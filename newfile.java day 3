@@ -1,0 +1,14 @@
+public class day3 {
+	public static void main(String[] args) {
+		//type data di java
+		// integer (satuan)
+		int i = 10; //mendefenisikan niali "i" dengan nilai 10
+		System.out.println("====INTEGER===="); 
+		System.out.println("nilai integer i = "  +(i  + 1)); // menampilkan nilai dari "i"  di tambah 1
+		System.out.println("Nilai max = " + Integer.MAX_VALUE); //menampilkan nilai maximum dari type data integer
+		System.out.println("Niai min = " + Integer.MIN_VALUE); //menampilakan nilai minimum dari type data integer
+		System.out.println("Besar integer =" + Integer.BYTES + " bytes"); //menampilkan ukuran dalan byte dari type data integer
+		System.out.println("Besar integer =" + Integer.SIZE + " bit"); //menampilkan ukuran dalam bit dsri type data integer
+		
+	}
+}
