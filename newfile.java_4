@@ -1,0 +1,14 @@
+public class Main {
+	public static void main(String[] args) {
+			//type data di java
+		// char (bilanagn real)
+		char a = 'a'; // Inisialisasi variabel char 'a' dengan nilai 'a'
+		System.out.println("====CHAR====");
+		System.out.println("nilai char a = "  + a);//Cetak nilai char 'a'		
+		System.out.println("Nilai max = " + Character.MAX_VALUE); 
+		System.out.println("Niai min = " + Character.MIN_VALUE); 
+		System.out.println("Besar char = " + Character.BYTES + "bytes"); 
+		System.out.println("Besar char = " + Character.SIZE + "bit");
+	
+	}
+}
