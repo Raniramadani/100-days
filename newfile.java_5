@@ -1,0 +1,18 @@
+public class day_5 {
+    public static void main(String[] args) {
+        boolean benar = true;
+        boolean salah = false;
+
+        System.out.println("Apakah benar? " + benar); // Output: Apakah benar? true
+        System.out.println("Apakah salah? " + salah); // Output: Apakah salah? false
+
+        // Contoh penggunaan dalam operasi logika
+        boolean hasilAnd = benar && salah; // Operasi AND
+        boolean hasilOr = benar || salah; // Operasi OR
+        boolean hasilNot = !benar; // Operasi NOT
+
+        System.out.println("Hasil AND: " + hasilAnd); // Output: Hasil AND: false
+        System.out.println("Hasil OR: " + hasilOr);   // Output: Hasil OR: true
+        System.out.println("Hasil NOT: " + hasilNot); // Output: Hasil NOT: false
+    }
+}
