@@ -1,0 +1,26 @@
+import java.math.BigInteger;
+public class Main {
+    public static void main(String[] args) {
+        // Inisialisasi dua objek BigInteger
+        BigInteger nun = new BigInteger("1821973223791945117");
+        BigInteger num = new BigInteger("6485234385115520051");
+
+        // +
+        BigInteger sum = nun.add(num);
+
+        // -
+        BigInteger difference = nun.subtract(num);
+
+        // *
+        BigInteger product = nun.multiply(num);
+
+        // /
+        BigInteger quotient = nun.divide(num);
+
+        // Menampilkan hasil
+        System.out.println("Penjumlahan: " + sum);
+        System.out.println("Pengurangan: " + difference);
+        System.out.println("Perkalian: " + product);
+        System.out.println("Pembagian: " + quotient);
+    }
+}
