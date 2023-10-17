@@ -1,0 +1,27 @@
+public class Konversistring {
+    public static void main(String[] args) {
+        //Konversi dari int ke double
+        int angkaInt = 25;
+        double angkaDouble = (double) angkaInt;
+
+        //Konversi dari double ke int
+        double angkaDesimal = 1.50;
+        int angkaInteger = (int) angkaDesimal;
+
+        //Konversi dari char ke int
+        char karakter = 'p';
+        int nilaiKarakter = (int) karakter;
+
+        //Konversi dari int ke char
+        int nilaiInteger = 23;
+        char karakterDariInt = (char) nilaiInteger;
+
+        // mencetak hasil dari konversi di atas
+        System.out.println("Konversi dari int ke double: " + angkaDouble);
+        System.out.println("Konversi dari double ke int: " + angkaInteger);
+        System.out.println("Konversi dari char ke int: " + nilaiKarakter);
+        System.out.println("Konversi dari int ke char: " + karakterDariInt);
+    }
+}
+
+ 
