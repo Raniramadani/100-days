@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        int angka = 18;           // Deklarasi variabel integer
+        long angkaPanjang = 1987654320L; // Perlu menambahkan 'L' untuk long literals
+        byte angkaKecil = 127;   // Deklarasi variabel byte
+        short angkaPendek = 9876; // Deklarasi variabel short
+
+        System.out.println("Nilai angka: " + angka);
+        System.out.println("Nilai angkaPanjang: " + angkaPanjang);
+        System.out.println("Nilai angkaKecil: " + angkaKecil);
+        System.out.println("Nilai angkaPendek: " + angkaPendek);
+    }
+}
