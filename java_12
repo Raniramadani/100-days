@@ -1,0 +1,19 @@
+public class SamboMembeliPcGaming {
+     
+    public static void main(String[] args) {
+
+                int hargaPCgaming = 150; 
+        int penghasilanBulanan = 13;
+        int tagihanRumah = 4; 
+        int biayaAnakPertama = 2; 
+        int biayaAnakLainnya = 1; 
+        int tabunganMaksimal = 5;
+        int totalPengeluaran = tagihanRumah + biayaAnakPertama + (biayaAnakLainnya * 2);
+        int sisaPenghasilan = penghasilanBulanan - totalPengeluaran;
+        int tabunganPerTahun = sisaPenghasilan * 12;
+        
+        double tahunDibutuhkan = (double)hargaPCgaming / tabunganPerTahun;
+        
+        System.out.println("Sambo akan membutuhkan sekitar " + tahunDibutuhkan + " tahun untuk membeli PC gaming.");
+    }
+}
