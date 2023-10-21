@@ -1,19 +1,37 @@
-public class SamboMembeliPcGaming {
-     
-    public static void main(String[] args) {
+import java.util.Scanner;
 
-                int hargaPCgaming = 150; 
-        int penghasilanBulanan = 13;
-        int tagihanRumah = 4; 
-        int biayaAnakPertama = 2; 
-        int biayaAnakLainnya = 1; 
-        int tabunganMaksimal = 5;
-        int totalPengeluaran = tagihanRumah + biayaAnakPertama + (biayaAnakLainnya * 2);
-        int sisaPenghasilan = penghasilanBulanan - totalPengeluaran;
-        int tabunganPerTahun = sisaPenghasilan * 12;
+public class Day12 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
         
-        double tahunDibutuhkan = (double)hargaPCgaming / tabunganPerTahun;
+        System.out.print("harga pc gaming : ");
+        double harga = input.nextDouble();
         
-        System.out.println("Sambo akan membutuhkan sekitar " + tahunDibutuhkan + " tahun untuk membeli PC gaming.");
+        System.out.print("masukkan penghasilan  sambo dalam perbulan  : ");
+        double penghasilan = input.nextDouble();
+        
+        System.out.print("masukkan maksimal uang yang dapat ditabung oleh sambo dalam/bulan : ");
+        double tabungan = input.nextDouble();
+        
+        System.out.print("masukkan tagihan rumah/bulan : ");
+        double tagihanrumah = input.nextDouble();
+        
+        System.out.print("masukkan biaya pengeluaran anak pertama dalam/bulan : ");
+        double biayaanakpertama = input.nextDouble();
+        
+        System.out.print("masukkan biaya 2 anak lainnya dalam/perbulan : ");
+        double biaya2anak = input.nextDouble();
+        
+        // hitung sisa uang untuk kebutuhan sehari-hari yang diberikan ke pada istrinya
+        double sisauang = penghasilan - tagihanrumah - biayaanakpertama - biaya2anak; 
+        
+        // hitung berapa tahun sambo menabung untuk bisa membeli pc gaming
+        double tahundibutuhkan = harga / sisauang;
+        double hasil = tahundibutuhkan/12;
+        System.out.print("sambo memerlukan sekitar " + hasil + "tahun atau lebih untuk bisa membeli pc gaming");
+        
+        
+        
     }
 }
