@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 10; // Anda harus mendefinisikan variabel a terlebih dahulu
+        System.out.println("nilai  "  + a);
+        
+        if (a == 10) {
+            System.out.println("ini adalah jalur true");
+        } else {    
+            System.out.println("ini adalah jalur false");
+        }
+        
+        System.out.println("selesai");    
+    }
+}
