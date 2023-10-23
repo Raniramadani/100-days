@@ -1,0 +1,21 @@
+public class Main {
+    //deklarasi dan insilialisasi variabel  
+    String nopol = "D 234 LE";
+    String merek = "Honda";
+    int harga = 80000000;
+    int tahunPembuatan = 1948;
+    String namaPemilik = "rany";
+
+    public void tampilkanInfoMotor() {
+        System.out.println("Nomor Polisi  : " + nopol);
+        System.out.println("Merek         : " + merek);
+        System.out.println("Harga         : " + harga);
+        System.out.println("Tahun Pembuatan: " + tahunPembuatan);
+        System.out.println("Nama Pemilik  : " + namaPemilik);
+    }
+
+    public static void main(String[] args) {
+        Main motor = new Main();
+        motor.tampilkanInfoMotor();
+    }
+}
