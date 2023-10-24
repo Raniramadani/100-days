@@ -1,0 +1,16 @@
+public class Main {
+	public static void main(String[] args) {
+		int angka = 15;
+
+if (angka > 0 && angka < 10) {
+    System.out.println("Angka 1 dan 9");
+} else if (angka >= 10 && angka < 20) {
+    System.out.println("Angka 0 dan 19");
+} else if (angka >= 20 || angka < 0) {
+    System.out.println("Angka lebih besar dari 19 atau negatif");
+} else {
+    System.err.println("Angka adalah nol");
+}
+
+	}
+}
