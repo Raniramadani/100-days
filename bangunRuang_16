@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.err.println("Pilih_bangun_ruang:");
+        System.err.println("a. Kubus\nb. Balok\nc. Tabung");
+        char pilihan = input.next().charAt(0);
+
+        if (pilihan == 'a') {
+            System.err.print("Masukkan panjang sisi kubus: ");
+            double sisi = input.nextDouble();
+            System.err.println("Volume kubus adalah: " + hitungVolumeKubus(sisi));
+        } else if (pilihan == 'b') {
+            System.err.print("Masukkan panjang balok: ");
+            double panjang = input.nextDouble();
+            System.err.print("Masukkan lebar balok: ");
+            double lebar = input.nextDouble();
+            System.err.print("Masukkan tinggi balok: ");
+            double tinggi = input.nextDouble();
+            System.err.println("Volume balok adalah: " + hitungVolumeBalok(panjang, lebar, tinggi));
+        } else if (pilihan == 'c') {
+            System.err.print("Masukkan jari-jari tabung: ");
+            double jariJari = input.nextDouble();
+            System.err.print("Masukkan tinggi tabung: ");
+            double tinggiTabung = input.nextDouble();
+            System.err.println("Volume tabung adalah: " + hitungVolumeTabung(jariJari, tinggiTabung));
+        } else {
+            System.err.println("Pilihan tidak valid.");
+        }
+    }
+
+    public static double hitungVolumeKubus(double sisi) {
+        return Math.pow(sisi, 3);
+    }
+
+    public static double hitungVolumeBalok(double panjang, double lebar, double tinggi) {
+        return panjang * lebar * tinggi;
+    }
+
+    public static double hitungVolumeTabung(double jariJari, double tinggi) {
+        final double PI = 3.14;
+        return PI * Math.pow(jariJari, 2) * tinggi;
+    }
+}
