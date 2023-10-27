@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class CekBilanganPrima {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan sebuah bilangan bulat positif: ");
+        int bilangan = scanner.nextInt();
+
+        boolean adalahPrima = true;
+
+        if (bilangan <= 1) {
+            adalahPrima = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(bilangan); i++) {
+                if (bilangan % i == 0) {
+                    adalahPrima = false;
+                    break;
+                }
+            }
+        }
+
+        if (adalahPrima) {
+            System.out.println(bilangan + " adalah bilangan prima.");
+        } else {
+            System.out.println(bilangan + " bukan bilangan prima.");
+        }
+
+        scanner.close();
+    }
+}
