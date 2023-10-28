@@ -1,0 +1,14 @@
+public class While {
+    public static void main(String[] args) {
+        // Inisialisasi variabel
+        int angka = 1;
+        double hasilPangkat = 1.0;
+
+        // Gunakan while untuk menghitung pangkat dari 2 hingga 10
+        while (angka <= 10) {
+            hasilPangkat = Math.pow(2, angka);
+            System.out.println("2 pangkat " + angka + " = " + hasilPangkat);
+            angka++;
+        }
+    }
+}
